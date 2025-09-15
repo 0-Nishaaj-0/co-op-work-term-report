@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>City of Brampton – Co-op Work Term Report</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: system-ui, sans-serif;
+      background: linear-gradient(135deg, #0e1b33, #182747, #101a30);
+      color: #f5f5f5;
+      line-height: 1.6;
+    }
+    header, footer { text-align: center; padding: 2rem 1rem; }
+    h1 { font-size: 2.4rem; margin-bottom: .5rem; }
+    h2 {
+      margin-top: 2rem;
+      font-size: 1.8rem;
+      color: #ffd54f;
+      border-bottom: 2px solid rgba(255,255,255,0.15);
+      padding-bottom: .3rem;
+    }
+    .section {
+      max-width: 900px;
+      margin: 2rem auto;
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 14px;
+      padding: 1.5rem 2rem;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+    }
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+    .stat {
+      background: rgba(255,255,255,0.07);
+      border-radius: 12px;
+      padding: 1rem;
+      text-align: center;
+      border: 1px solid rgba(255,255,255,0.1);
+    }
+    .stat h3 { margin: .2rem 0; font-size: 1.5rem; color: #ffd54f; }
+    ul { padding-left: 1.25rem; }
+    .goals-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1rem;
+    }
+    .goal-card {
+      background: rgba(255,255,255,0.07);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 12px;
+      padding: 1rem;
+    }
+    .timeline {
+      border-left: 3px solid #ffd54f;
+      margin-left: 1rem;
+      padding-left: 1rem;
+    }
+    .timeline-item { margin-bottom: 1.5rem; }
+    .callout {
+      border-left: 4px solid #4cafef;
+      background: rgba(255,255,255,0.05);
+      padding: .8rem 1rem;
+      border-radius: 8px;
+      font-size: .95rem;
+    }
+    a { color: #90caf9; }
+    footer {
+      border-top: 1px solid rgba(255,255,255,0.15);
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+    <header>
+        <img src="brampton.png" alt="City of Brampton Logo" style="max-height: 80px; margin-bottom: 1rem;">
+        <h1>City of Brampton – Co-op Work Term Report</h1>
+        <p><strong>Summer 2025</strong> • Software Support / Business Systems Analyst (Recreation)</p>
+      </header>
+      
+
+<main>
+    <section class="section">
+        <h2>Abstract / Introduction</h2>
+      
+        <!-- Focused Work Introduction -->
+        <p>
+          <strong>Introduction:</strong> In Summer 2025, I worked as a Software Support / Business Systems Analyst Co-op
+          with the City of Brampton’s <strong>Recreation Division</strong>. This website highlights the automation projects,
+          documentation, and process improvements I created to make the recreation system more efficient. I hope readers
+          come away understanding not just what I built — Python Selenium scripts, workflow documentation, and audits —
+          but also how these contributions reduced manual work, improved data quality, and made a lasting impact on the
+          team.
+        </p>
+      
+        <!-- Your existing abstract content stays here -->
+        <p>
+          During my co-op term at the City of Brampton, I spearheaded QA automation projects and operational
+          improvements that directly reduced manual work and improved data accuracy. I developed Selenium scripts to
+          validate resident accounts, created a coverage estimator to measure test completeness, and authored SOPs
+          with screenshots for future staff. These efforts led to measurable time savings — reducing residency
+          validation from <strong>~20 seconds to ~7 seconds per account</strong> — across thousands of records.
+        </p>
+      
+        <div class="stats-grid">
+          <div class="stat"><h3>7s</h3><p>Avg time per validation<br><small>(20s before automation)</small></p></div>
+          <div class="stat"><h3>50+</h3><p>Bugs logged & documented<br><small>Portal & Mobile</small></p></div>
+          <div class="stat"><h3>1000+</h3><p>Accounts processed with<br>CSV + screenshots</p></div>
+          <div class="stat"><h3>3</h3><p>New SOPs & Dashboards<br>for QA/Stakeholders</p></div>
+        </div>
+      </section>
+      
+      
+
+  <section class="section">
+    <h2>Information about the Employer</h2>
+    <p>
+      The City of Brampton’s Transit & Recreation division serves a large and diverse population, managing
+      memberships, program registrations, and facility bookings through the <strong>PerfectMind/Xplor</strong> platform.
+      The recreation system itself is <strong>outsourced to Xplor</strong>, meaning the City collaborates closely with an external vendor
+      for updates, maintenance, and issue resolution. This partnership requires clear communication and thorough
+      testing before rolling out changes to avoid service disruptions for residents.
+    </p>
+  
+    <!-- Xplor logo centered inside the section -->
+    <div style="text-align: center; margin: 1.5rem 0;">
+      <img src="xplor.png" alt="Xplor Recreation Logo"
+           style="max-height: 70px; background: white; padding: 8px; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.3);">
+      <p style="font-size: 0.9rem; color: #ccc; margin-top: 0.5rem;">Xplor Recreation — Vendor Partner</p>
+    </div>
+  
+    <div class="callout">
+      <strong>Insight:</strong> Working with an outsourced system taught me the importance of vendor coordination,
+      reproducible bug reports, and automation evidence that can be shared externally — making my work useful
+      not just for internal QA but also for Xplor’s support team when diagnosing issues.
+    </div>
+  </section>
+  
+
+  <section class="section">
+    <h2>Goals and Learning Outcomes</h2>
+    <div class="goals-grid">
+      <div class="goal-card">
+        <h3>Planned Goals</h3>
+        <ul>
+          <li>Develop reliable <strong>Python Selenium automation scripts</strong> using XML locators and occasional JavaScript execution.</li>
+          <li>Create clear <strong>workflow documentation</strong> and SOPs so future staff can follow and maintain the automations.</li>
+          <li>Gain experience in <strong>inbox management</strong> for support tickets and resident communications.</li>
+          <li>Collaborate with the <strong>Accounting team</strong> to understand invoice processing and identify automation opportunities.</li>
+          <li><strong>Soft Goal:</strong> Improve teamwork, communication, and cross-department collaboration skills.</li>
+        </ul>
+      </div>
+  
+      <div class="goal-card">
+        <h3>Reflections & Results</h3>
+        <ul>
+          <li>Successfully automated high-volume resident validation tasks, saving hours of manual work per week.</li>
+          <li>Delivered well-structured workflow documentation and audit logs, making results reproducible and easy to verify.</li>
+          <li>Handled daily support inbox efficiently, escalating technical issues and closing tickets promptly.</li>
+          <li>Worked closely with Accounting to streamline invoice tracking and recommended an <strong>OCR-based automation script</strong> for future adoption.</li>
+          <li>Grew more confident collaborating with multiple teams and presenting findings during weekly reviews.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  
+
+  <section class="section">
+    <h2>Job Description & Key Projects</h2>
+    <p>
+      My co-op role combined technical automation, documentation, and cross-team collaboration.
+      The most unique aspect of my job was building and running real automation scripts in a
+      live municipal system environment, while also helping shape processes that future staff
+      will use. I applied programming skills from school but also learned many practical
+      techniques on the job — especially around debugging, workflow design, and team
+      communication. The C programming labguage is mainly taught at the Univeristy of Guelph so I became more proficient at python on my co-op term.
+    </p>
+  
+    <div class="timeline">
+      <div class="timeline-item">
+        <strong>Automation Development:</strong>
+        Wrote Python Selenium scripts using XML locators and occasional JavaScript execution to handle complex
+        UI interactions. Added logging, CSV output, and screenshots for a reliable audit trail.  
+        <em>Skills:</em> Python (classroom + practice), Selenium/WebDriver (learned on the job), DOM inspection.
+      </div>
+  
+      <div class="timeline-item">
+        <strong>Workflow Documentation:</strong>
+        Authored clear SOPs and visual guides for running scripts, validating results, and troubleshooting.
+        This ensured the automations could be maintained after my term ended.  
+        <em>Skills:</em> Technical writing (on the job), process mapping (learned from colleagues).
+      </div>
+  
+      <div class="timeline-item">
+        <strong>Inbox & Support Management:</strong>
+        Managed the shared support inbox, responded to resident issues, and escalated problems to the vendor
+        when necessary — giving me experience in customer service and communication.  
+        <em>Skills:</em> Professional communication (on the job), prioritization, escalation protocols.
+      </div>
+  
+      <div class="timeline-item">
+        <strong>Audits & Reporting:</strong>
+        Conducted data audits, summarized results, and presented findings during weekly reviews, helping
+        decision-makers understand trends and gaps.  
+        <em>Skills:</em> Data analysis (class + job), Excel/CSV handling, stakeholder presentation.
+      </div>
+  
+      <div class="timeline-item">
+        <strong>Accounting Collaboration:</strong>
+        Worked with the accounting team to understand invoice processing workflows and suggested an OCR-based
+        automation script that could capture and process invoice data automatically.  
+        <em>Skills:</em> Workflow analysis, solution design, automation planning (learned on the job).
+      </div>
+    </div>
+  </section>
+  
+  
+
+  <section class="section">
+    <h2>Conclusions</h2>
+    <p>
+      This term significantly improved my ability to combine automation engineering with business systems analysis.
+      I learned to measure the impact of my work with metrics, communicate results visually, and deliver tools
+      others can use after my term ends. These skills will serve me well in QA automation, DevOps, or process
+      improvement roles in future co-ops.
+    </p>
+  </section>
+
+  <section class="section">
+    <h2>Acknowledgments</h2>
+    <p>
+      I am extremely grateful to my manager <strong>Phebe</strong> for her guidance and mentorship throughout the term.
+      She made the workplace welcoming, was always approachable, and taught me valuable lessons about collaboration,
+      communication, and working effectively with others — which made this co-op a very positive experience.
+    </p>
+  
+    <p>
+      I also had the chance to work closely with several colleagues, each helping me grow in different areas:
+    </p>
+  
+    <ul>
+      <li><strong style="color:#ffd54f;">Williance — Mobile Testing:</strong> Collaborated on testing the PerfectMind/Xplor mobile app,
+        running test cases, reproducing bugs, and logging detailed results for the QA team.</li>
+      <li><strong style="color:#ffd54f;">Supreet — Documentation & Power BI:</strong> Worked together on creating clear workflow
+        documentation, building and updating dashboards, and visualizing data for stakeholders.</li>
+      <li><strong style="color:#ffd54f;">Kashneet — Scripting:</strong> Partnered on Python Selenium scripting projects,
+        debugging XML locators, and refining automation logic for higher reliability.</li>
+    </ul>
+  
+    <!-- Three images side by side -->
+    <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin-top: 1.5rem;">
+      <div style="flex: 1; min-width: 250px; text-align: center;">
+        <img src="xplorapp.png" alt="Mobile Testing Session"
+             style="max-width: 100%; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.4);">
+        <p style="font-size: 0.85rem; color: #ccc; margin-top: 0.5rem;">Mobile app testing with Williance</p>
+      </div>
+  
+      <div style="flex: 1; min-width: 250px; text-align: center;">
+        <img src="powerbi.png" alt="Power BI Documentation"
+             style="max-width: 100%; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.4);">
+        <p style="font-size: 0.85rem; color: #ccc; margin-top: 0.5rem;">Documentation & dashboards with Supreet</p>
+      </div>
+  
+      <div style="flex: 1; min-width: 250px; text-align: center;">
+        <img src="automation.png" alt="Python Selenium Script Collaboration"
+             style="max-width: 100%; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.4);">
+        <p style="font-size: 0.85rem; color: #ccc; margin-top: 0.5rem;">Scripting sessions with Kashneet</p>
+      </div>
+    </div>
+  </section>
+  
+  
+<footer>
+  Public URL for submission: <a href="#">https://your-deployed-site-url</a><br>
+  <small>No login required • Optimized for desktop & mobile</small>
+</footer>
+
+</body>
+</html>
